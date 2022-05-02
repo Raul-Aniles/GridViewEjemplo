@@ -23,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(title: const Text("Flutter GridView"), backgroundColor: Colors.amber),
         body: GridView.custom(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+            crossAxisCount: 3,
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
           ),
