@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:aniles/gridview.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Ferreteria());
 }
 
-class MyApp extends StatelessWidget {
+class Ferreteria extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.purple,
           brightness: Brightness.dark,
         ), // Es el tema general global
-        home: const MyHomePage());
+        home: const PaginaInicial());
   }
 } // Widget sin estado

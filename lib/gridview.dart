@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class PaginaInicial extends StatefulWidget {
+  const PaginaInicial({Key? key}) : super(key: key);
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MiPaginaInicial createState() => _MiPaginaInicial();
 } // Widget con estado
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MiPaginaInicial extends State<PaginaInicial> {
   List<String> images = [
     "assets/images/ferreteria1.jpg",
     "assets/images/ferreteria2.jpg",
@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
             crossAxisSpacing: 10,
           ),
           childrenDelegate: SliverChildBuilderDelegate(
-            (BuildContext, index) {
+            (buildContext, index) {
               return Image.asset(
                 images[index],
                 fit: BoxFit.cover,
