@@ -20,7 +20,7 @@ class _MiPaginaInicial extends State<PaginaInicial> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text("Flutter GridView"), backgroundColor: Colors.amber),
+        appBar: AppBar(title: const Text("Listado de articulos"), backgroundColor: Colors.amber),
         body: GridView.custom(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
